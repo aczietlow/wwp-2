@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Wound Warrior Project</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+                    <section>
+                        <h1>Wounded Warriors Project</h1>
+                        <h3>Introduction to Web Development</h3>
+                        <p>
+                            <small>Created by <a href="http://palantir.net/about/team/chris-zietlow">Chris Zietlow</a> / <a href="http://twitter.com/aczietlow">@aczietlow</a> / aczietlow@gmail.com</small>
+                        </p>
+                        <p>
+                            <small>Sponsored by <a href="http://theclubhou.se/">The Clubhouse</a></small>
+                        </p>
+                    </section>
+                    <section>
+                        <h3>About me</h3>
+                        <ul>
+                            <li>PHP developer for <a href="http://palantir.net">Palantir.net</a></li>
+                            <li>Owner of <a href="http://www.spyderbytedesign.com/">Spyder Byte Design</a></li>
+                            <li>Member of <a href="http://theclubhou.se/">Clubhouse</a></li>
+                            <li>Co-organizer of <a href="http://www.meetup.com/Augusta-Linux-User-Group/">Aug Linux User Group</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>About the Clubhouse</h3>
+                        <p>We are quite literally a clubhouse, a dojo even. Members pay dues. We run events and classes, and buy tools based on what our members want and need to build a project, improve themselves, start a business, or give back to the community.</p>
+                        <p>One of the clubs at the club house may interest you. <a href="http://www.meetup.com/RefreshAugusta/">Refresh Augusta</a> are a group of media and web professionals in the Augusta area.</p>
+                    </section>
+                    <section>
+                        <h3>This Class</h3>
+                        <p>What we're going to cover in this class.</p>
+                        <ul>
+                            <li><strong>HTML*</strong></li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>jQuery</li>
+                            <li>version control</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>What is HTML?</h3>
+                        <p>HTML is a language used to describe web pages</p>
+                        <ul>
+                            <li>HTML stands for <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</li>
+                            <li>HTML is a markup language</li>
+                            <li>Markup languages use sets of <strong>tags</strong> to describe data</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>HTML Tags</h3>
+                        <ul>
+                            <li>HTML tags are keywords surrounded by angle brackets &lt;tag&gt;</li>
+                            <li>HTML tags come in pairs &lt;tag&gt; &lt;/tag&gt;</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>HTML Pages</h3>
+                        <ul>
+                            <li>HTML pages describe web pages</li>
+                            <li>The tags in an html page are what make up a web page</li>
+                        </ul>
+                        <!--
+                        <pre><code data-trim contenteditable></code></pre>
+                        -->
+                       <pre><code data-trim contenteditable>
+&lt!DOCTYPE html&gt
+&lthtml&gt
+    &ltbody&gt
+        <h1> Hello World! </h1>
+        <p> This is my first web page! </p>
+    &lt/body&gt
+&lt/html&gt
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Example Explained</h3>
+                        <iframe src="../../src/wwp-2--basic-page.html"></iframe>
+                    </section>
+                    <section>
+                       <h3>HTML Elements</h3>
+                       <P>Different from HTML tags, HTML elements describes everything between HTML tags</P>
+                       <ul>
+                           <li>&lth1&gt is a tag</li>
+                           <li>"Hello World" is the element</li>
+                           <li>Elements can contain additional tags</li>
+                       </ul>
+                    </section>
+                    <section>
+                        <h3>Web Browsers</h3>
+                        <p>Web Browsers are meant to read HTML documents and display them as web pages</p>
+                        <img src="http://www.vexite.com/images/2011/06/browser-war-illustration.jpg" alt="One does not get awesome images without Internet connection" />
+                    </section>
+                </section>
+                <!-- Basic Examples -->
+                <section>
+                    <section>
+                        <h3>Heading tags</h3>
+                        <p>Heading tags range from &lth1&gt to &lth6&gt</p>
+                        <pre><code data-trim contenteditable>
+<h1>This is an h1 heading</h1>
+<h2>This is a an h2 heading</h2>
+<h3>This is a an h3 heading</h3>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Heading tags</h3>
+                        <p>Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+
+                            Search engines use your headings to index the structure and content of your web pages.
+
+                            Since users may skim your pages by its headings, it is important to use headings to show the document structure.
+
+                            H1 headings should be used as main headings, followed by H2 headings, then the less important H3 headings, and so on.</p>
+                    </section>
+                    <section>
+                        <h3>Heading tags</h3>
+                        <iframe src="../../src/wwp-2--basic-heading-tags.html"></iframe>
+                    </section>
+                    <section>
+                        <h3>Paragraph tags</h3>
+                        <p>Web browsers will automatically add spacing (margin) before and after &ltp&gt </p>
+                        <pre><code data-trim contenteditable>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Paragraph tags</h3>
+                        <ul>
+                            <li>Don't forget the end tags</li>
+                            <li>Most browsers will attempt to auto fill in missing end tags</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Paragraph tags</h3>
+                        <iframe src="../../src/wwp-2--basic-paragraph-tags.html"></iframe>
+                    </section>
+                    <section>
+                        <h3>Links</h3>
+                    <pre><code data-trim contenteditable>
+                        <a href="http://theclubhou.se/">This is a link</a>
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h3>Links</h3>
+                        <p>The HTML &lta&gt tag defines a hyperlink.
+
+                            A hyperlink (or link) is a word, group of words, or image that you can click on to jump to another document.
+
+                            When you move the cursor over a link in a Web page, the arrow will turn into a little hand.
+
+                            The most important attribute of the &lta&gt element is the href attribute, which indicates the link’s destination.</p>
+                    </section>
+                    <section>
+                        <h3>Links</h3>
+                        <iframe src="../../src/wwp-2--basic-link-tags.html"></iframe>
+                    </section>
+                    <section>
+                        <h3>Image tags</h3>
+                    <pre><code data-trim contenteditable>
+<img src="../../src/images/download.jpeg" width="104" height="142" />
+<img src="https://i.chzbgr.com/maxW500/7866920704/h85B4C040/" width="104" height="142" />
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h3>HTML Images</h3>
+                        <p>The &ltimg&gt tag is empty, which means that it contains attributes only, and has no closing tag.</p>
+                        <p>To display an image on a page, you need to use the src attribute. Src stands for "source". The value of the src attribute is the URL of the image you want to display.</p>
+                    </section>
+                    <section>
+                        <h3>Image tags</h3>
+                        <iframe src="../../src/wwp-2--basic-image-tags.html" width="300" height="500"></iframe>
+                    </section>
+                    <section>
+                        <h3>Your turn!</h3>
+                        <p>Create an html document using each of the p, h1, img, and a tags. </p>
+                    </section>
+                    <section>
+                        <h3>Cheat Sheet</h3>
+                        <pre><code data-trim contenteditable>
+<h1>This is an h1 heading</h1>
+<p>This is a paragraph</p>
+<a href="http://theclubhou.se/">This is a link</a>
+<img src="../../src/images/download.jpeg" width="104" height="142" />
+<img src="https://i.chzbgr.com/maxW500/7866920704/h85B4C040/" width="104" height="142" />
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>HTML attributes</h3>
+                        <p>Attributes provide additional information about HTML elements</p>
+                        <ul>
+                            <li>HTML elements can have <stron>attributes</stron></li>
+                            <li>Attributes provide additional information about an element</li>
+                            <li>Attributes are always specified in the start tag</li>
+                            <li>Attributes come in name value pairs: name="value"</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>HTML attributes</h3>
+                        <p>Pro tips</p>
+                        <ul>
+                            <li>Always quote the attribute values</li>
+                            <li>Use lowercase letters</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>HTML attributes</h3>
+                        <table>
+                            <tbody><tr>
+                                <th style="width:15%">Attribute</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>class</td>
+                                <td>Specifies one or more classnames for an element (refers to a class in a style sheet)</td>
+                            </tr>
+                            <tr>
+                                <td>id</td>
+                                <td>Specifies a unique id for an element</td>
+                            </tr>
+                            <tr>
+                                <td>style</td>
+                                <td>Specifies an inline CSS style for an element</td>
+                            </tr>
+                            <tr>
+                                <td>title</td>
+                                <td>Specifies extra information about an element (displayed as a tool tip)</td>
+                            </tr>
+                            </tbody></table>
+                    </section>
+                    <section>
+                        <h3>Link target Attribute</h3>
+                        <p>The target attribute specifies where to open the linked document.</p>
+                        <pre><code data-trim contenteditable>
+<a href="http://theclubhou.se/" target="_blank">The clubhouse</a>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Images Attributes</h3>
+                        <p>You can set the height and width of an image by adding the height and width attributes</p>
+                        <pre><code data-trim contenteditable><img src="https://i.chzbgr.com/maxW500/7866920704/h85B4C040/" width="104" height="142" /></code></pre>
+                    </section>
+                    <section>
+                        <h3>Your turn</h3>
+                        <p>Add a target attribute and value to all &lta&gt tags</p>
+                        <p>Add a title attribute and value to all &lta&gt tags</p>
+                    </section>
+                    <section>
+                        <h3>Additional HTML element</h3>
+                        <pre><code data-trim contenteditable>
+<!-- This is a comment -->
+<!-- Creates horizontal line -->
+<hr />
+<!-- Creates a line break -->
+<br />
+                            </code></pre>
+                    </section>
+                    <section>
+                        <h3>Your turn</h3>
+                        <p>Add hr and br tags to your html document from the previous example.</p>
+
+                    </section>
+                </section>
+            <section>
+                <section>
+                    <h3>HTML head</h3>
+                    <p>The &lthead&gt element is a container for all the head elements. Elements inside &lthead&gt can include scripts, instruct the browser where to find style sheets, provide meta information, and more.</p>
+                    <p>The following tags can be added to the head section: &lttitle&gt, &ltstyle&gt, &ltmeta&gt, &ltlink&gt, &ltscript&gt, &ltnoscript&gt, and &ltbase&gt. </p>
+                </section>
+                <section>
+                    <h3>HTML head</h3>
+                    <img src="http://rlv.zcache.com/proper_paper_heading_poster_for_middle_high_school-r0f336d883f27401c8ef11897cacdd15e_l6c_8byvr_324.jpg" />
+                </section>
+                <section>
+                    <h3>HTML title</h3>
+                    <p>The title tag defines the title of the document</p>
+                    <p>The title tag</p>
+                    <ul>
+                        <li>defines the title in the browser bar</li>
+                        <li>provides a title for the page when it's added to favorites</li>
+                        <li>displays a title for the page in search engine results</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>HTML title</h3>
+                    <pre><code data-trim contenteditable>
+&lt!DOCTYPE html&gt
+&lthtml&gt
+&lthead>
+    &lttitle&gtAwesome document title&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+    <h1> Hello World! </h1>
+    <p> This is my first web page! </p>
+&lt/body&gt
+&lt/html&gt
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>HTML head elements</h3>
+                    <table>
+                        <tbody><tr>
+                            <th style="width:20%">Tag</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><a href="#">&lt;head&gt;</a></td>
+                            <td> Defines information about the document</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">&lt;title&gt;</a></td>
+                            <td>Defines the title of a document</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">&lt;base&gt;</a></td>
+                            <td>Defines a default address or a default target for all links on a page</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">&lt;link&gt;</a></td>
+                            <td>Defines the relationship between a document and an external resource</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">&lt;meta&gt;</a></td>
+                            <td>Defines metadata about an HTML document</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">&lt;script&gt;</a></td>
+                            <td>Defines a client-side script</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">&lt;style&gt;</a></td>
+                            <td>Defines style information for a document</td>
+                        </tr>
+                        </tbody></table>
+                </section>
+                <section>
+                    <h3>Your turn</h3>
+                    <p>Add a title to your html document inside the &lthead&gt tag</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Tables</h3>
+                     <pre><code data-trim contenteditable>
+<table border="1">
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+    </tr>
+</table>
+                    </code></pre>
+                </section>
+                <section>
+                    <h3>Tables</h3>
+                    <p>A table is divided into rows (with the &lttr&gt tag), and each row is divided into data cells (with the <td> tag). td stands for "table data," and holds the content of a data cell. A &lttd&gt tag can contain text, links, images, lists, forms, other tables, etc.</p>
+                </section>
+                <section>
+                    <h3>Tables</h3>
+                    <iframe src="../../src/wwp-2--basic-tables.html" ></iframe>
+                </section>
+                <section>
+                    <h3>Table Attributes</h3>
+                    <p>Border This will display the border of the table.</p>
+                    <p>It can be set to a value of "0" to hide the border</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Lists</h3>
+                    <p> unordered lists</p>
+                <pre><code data-trim contenteditable>
+<ul>
+    <li>Coffee</li>
+    <li>Milk</li>
+</ul>
+                </code></pr e>
+                    <p>Ordered lists</p>
+                <pre><code data-trim contenteditable>
+<ol>
+    <li>Coffee</li>
+    <li>Milk</li>
+</ol>
+                </code></pre>
+                </section>
+                <section>
+                    <h3>Lists</h3>
+                    <iframe src="../../src/wwp-2--basic-lists.html" ></iframe>
+                </section>
+                <section>
+                    <h3>Your turn</h3>
+                    <p>Add a table, and a list to your html document</p>
+                </section>
+            </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
